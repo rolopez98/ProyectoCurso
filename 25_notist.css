@@ -1,0 +1,51 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 5fr 1fr 1fr;
+    padding: 0.5rem;
+    text-transform: uppercase;
+}
+.intro{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+.intro h1{
+    margin-top: 8rem;
+    font-size: 2.5rem;
+}
+.intro p{
+    line-height: 1.5lh;
+}
+.enlace{
+    margin-top: 2rem;
+    margin-bottom: 7rem;
+}
+.enlace a{
+    background-color: rgb(114, 114, 214);
+    border-radius: 20px;
+    padding: 0.5rem 0.9rem 0.5rem 0.9rem;
+    text-decoration: none;
+    color: aliceblue;
+
+}
+.enlace a:hover{
+    background-color: rgb(114, 114, 214);
+}
+.join{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr 1fr;
+    background-color: rgb(114, 114, 214);
+    height: 80px;
+    margin-right: 0;
+    margin-left: 0;
+
+}
