@@ -8,6 +8,8 @@ html{
 }
 header{
     background-color: #249c9c;
+    margin-bottom: 1.5rem;
+
 }
 h1{
     font-size: 3rem;
@@ -35,7 +37,7 @@ main{
     background-color: #ffc88e;
 }
 footer{
-    background-color: #249c9c;
+    background-color: #287777;
     color: #eaebeb;
     font-size: 1.5rem;
     text-align: center;
@@ -44,11 +46,12 @@ footer{
 }
 main ul{
     list-style: none;
+    font-size: 1.5rem;
+
 
 }
 main ul li{
     line-height: 1.5lh;
-    text-align: center;
 
 
 }
@@ -61,5 +64,6 @@ main ul li{
     background-color: #9956f0;
     color: aliceblue;
     text-decoration: underline;
+    
 }
 
