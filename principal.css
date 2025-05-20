@@ -48,6 +48,8 @@ main ul{
 }
 main ul li{
     line-height: 1.5lh;
+    text-align: center;
+
 
 }
 .enlace{
