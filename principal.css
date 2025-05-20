@@ -28,7 +28,8 @@ h2{
 main{
     width: 60%;
     margin: 0 auto;
-    border: 12px solid #4b257c;
+    border: 8px solid #249c9c ;
+    border-style: dashed;
     min-height: 60vh;
     border-radius: 2rem;
     background-color: #ffc88e;
