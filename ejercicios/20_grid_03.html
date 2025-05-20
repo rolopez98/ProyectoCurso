@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 03</title>
+    <style>
+        .contenedor{
+            display: grid;
+            border: 3px solid blue;
+            background-color: rgb(114, 114, 114);
+            /* el template hace columnas según los valores que les des (x x x = 1 2 3) se puede poner en píxeles o en porcentajes. también se pueden usar fraciones (fr), donde se suman todos los valores */
+            grid-template-columns: repeat(4, 1fr 3fr);
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            /* el gap (hueco) tiene dos valores: fila y columna, en ese orden  */
+            gap: 5px 20px;
+            /* se puede decir que una celda empiece y acabe en un sitio en concreto */
+        }
+        div{
+            border: 2px solid red;
+            border-radius: 5px;
+            background-color: bisque;
+
+        }
+        /* Para hacer un calendario, en template columns habría que darle 7 valores (1fr 1fr 1fr... ) y lo mismo con los rows (5 filas), pero para no escribir 7 veces se puede poner grid-template-columns: repear (7, 1fr) y se repetirá 7 veces.
+        También se puede alternar el repeat, ej: repeat (4, 1fr 2fr) 
+        También se puede dar un valor primero o al final antes del repeat, por ejemplo 100px repeat(4, 1fr 2fr) */
+        .primera{
+            /* esto es para decir donde empieza y donde acaba de las columnas */
+            grid-column-start: 1;
+            grid-column-end: 9;
+            /* y esto para lo mismo de las filas */
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        .cuatro{
+            grid-column: 2/4;
+            grid-row: 3/5;
+        }
+        .seis{
+            grid-row: 3/ span 3;
+            grid-column: 6/ span 3;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="primera">1</div>
+        <div>2</div>
+        <div>3</div>
+        <div class="cuatro">4</div>
+        <div>5</div>
+        <div class="seis">6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+</body>
+</html>

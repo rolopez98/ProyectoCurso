@@ -1,0 +1,76 @@
+body{
+    background-color: rgb(234, 234, 234);
+}
+
+nav{
+    background-color: rgb(41, 159, 180);
+    color: white;
+}
+
+.img{
+    border-radius: 180px;
+    padding-left: 12px;
+    padding-top: 12px;
+    width: 12rem;
+    height: 12rem;
+}
+header{
+    background-color: #81d4fa;
+    box-shadow: -4px 10px 35px -8px rgba(0,0,0,0.71);
+    border-radius: 4px;
+}
+h1{
+    font-size: 80px;
+
+}
+h2{
+    margin-left: 33rem;
+    font-size: 2.5rem;
+    font-weight: normal;
+    
+}
+
+.mail{
+    font-size: 26px;
+    padding-left: 1rem;
+    box-shadow: -4px 10px 35px -8px rgba(0,0,0,0.71);
+}
+.linkedin{
+    font-size: 26px;
+    padding-left: 1rem;
+    box-shadow: -4px 10px 35px -8px rgba(0,0,0,0.71);
+
+}
+.xing{
+    font-size: 26px;
+    padding-left: 1rem;
+    box-shadow: -4px 10px 35px -8px rgba(0,0,0,0.71);    
+}
+
+.individual{
+    font-size: 20px;
+}
+
+ul{
+    text-align: center;
+    list-style: none;
+}
+li{
+    display: inline;
+    background-color: aquamarine;
+    margin: 0 1rem;
+    padding: 0 0.5rem;
+}
+div p{
+    padding: 1px;
+    text-align: left;
+    margin-left: 39px;
+    margin-top: 1rem;
+    font-size: 20px;
+    
+}
+
+.individual{
+    margin: -20px 40px 50px ;
+}
+

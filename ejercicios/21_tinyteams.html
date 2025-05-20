@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TinyTeams</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            background-color: rgb(215, 215, 215);
+        }
+        .contenedor{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr ;
+            gap: 1rem;
+            max-width: 90%;
+            margin: 0 auto;
+            text-align: center;
+
+        }
+        .tarjeta{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background-color: rgb(241, 241, 241);
+            padding: 1.5rem;
+            border-radius: 30px;
+            box-shadow: -15px -4px 64px 44px rgba(0,0,0,0.07);
+           -webkit-box-shadow: -15px -4px 64px 44px rgba(0,0,0,0.07);
+        -moz-box-shadow: -15px -4px 64px 44px rgba(0,0,0,0.07);
+            
+
+        }
+        .imagen img{
+            width: 6rem;
+            height: 6rem;
+            border-radius: 160px;
+        }
+        .imagen{
+            grid-row: 1/ span 2;
+        }
+        header{
+            text-align: center;
+            font-size: 24px;
+
+        }
+        .titulo h3{
+            font-size: 28px;
+            padding-bottom: 2rem;
+            text-align: left;
+        }
+        .texto{
+            font-size: 14px;
+            padding-bottom: 1rem;
+            margin-top: -3rem;
+        }
+        .enlace{
+            padding-top: 6px;
+            font-size: 18px;
+            color: black;
+        }
+        .gris{
+            background-color: rgb(197, 197, 197);
+            border-radius: 8px;
+            padding: 0.2rem;
+        }
+        .dinero{
+            text-align: left;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            Tiny teams hall of fame
+        </h1>
+        <p>
+            Directory of the most epic tiny teams in tech</p>
+    </header>
+    <div class="contenedor">
+       <div class="tarjeta">
+          <div class="imagen"><img src="doraemon_01.jpg" alt="Doraemon"></div>
+          <div class="titulo"><h3>Doraemon</h3></div>
+         <div class="texto">AI coding. 0 to $200M ARR in 21 months w/ 20 people</div>
+         <div class="equipo texto-peque"><span class="gris">Team: 1</span></div>
+         <div class="dinero texto-peque"><span class="gris">$20.000M</span></div>
+         <div class="enlace"><a href="">View Jobs</a></div>
+         <div class="enlace"><a href="">View Website</a></div>
+
+    </div>
+           <div class="tarjeta">
+          <div class="imagen"><img src="doraemon_01.jpg" alt="Doraemon"></div>
+          <div class="titulo"><h3>Doraemon</h3></div>
+         <div class="texto">AI coding. 0 to $200M ARR in 21 months w/ 20 people</div>
+         <div class="equipo"><span class="gris">Team: 1</span></div>
+         <div class="dinero"><span class="gris">$20.000M</span></div>
+         <div class="enlace"><a href="">View Jobs</a></div>
+         <div class="enlace"><a href="">View Website</a></div>
+
+    </div>       
+    <div class="tarjeta">
+          <div class="imagen"><img src="doraemon_01.jpg" alt="Doraemon"></div>
+          <div class="titulo"><h3>Doraemon</h3></div>
+         <div class="texto">AI coding. 0 to $200M ARR in 21 months w/ 20 people</div>
+         <div class="equipo"><span class="gris">Team: 1</span></div>
+         <div class="dinero"><span class="gris">$20.000M</span></div>
+         <div class="enlace"><a href="">View Jobs</a></div>
+         <div class="enlace"><a href="">View Website</a></div>
+
+    </div>
+</div>
+
+</body>
+</html>
