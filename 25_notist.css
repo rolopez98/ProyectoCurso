@@ -8,8 +8,9 @@ html, body{
 .menu{
     display: grid;
     grid-template-columns: 1fr 1fr 5fr 1fr 1fr;
-    padding: 0.5rem;
+    padding: 1rem;
     text-transform: uppercase;
+    align-items: baseline;
 }
 .intro{
     width: 50%;
@@ -31,7 +32,7 @@ html, body{
 .enlace a{
     background-color: rgb(114, 114, 214);
     border-radius: 20px;
-    padding: 0.5rem 0.9rem 0.5rem 0.9rem;
+    padding: 0.4rem 0.9rem 0.4rem 0.9rem;
     text-decoration: none;
     color: aliceblue;
 
@@ -40,12 +41,16 @@ html, body{
     background-color: rgb(114, 114, 214);
 }
 .join{
-    margin-top: 2rem;
+
     display: grid;
-    grid-template-columns: 2fr 1fr 2fr 1fr;
+    grid-template-columns: 1fr;
     background-color: rgb(114, 114, 214);
-    height: 80px;
+    height: 70px;
     margin-right: 0;
     margin-left: 0;
+    align-items: center;
+    justify-items: center;
+    color: white;
+    text-transform: uppercase;
 
 }
