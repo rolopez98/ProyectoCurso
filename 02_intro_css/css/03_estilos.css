@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(253, 249, 211);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 80px 50px 80px 80px;
+}
+.titulo{
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    background-color: #d592a4;
+}
+.cabecera{
+    height: 500px;
+    box-shadow: 43px 10px 35px 0 rgba(10, 10, 20, 0.6);
+    border-radius: 250px;
+
+}

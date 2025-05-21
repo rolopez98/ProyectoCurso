@@ -1,0 +1,52 @@
+html{
+    font-size: 16px;
+    font-family: Helvetica, sans-serif;
+}
+body{
+    background: linear-gradient(to right, #d31562, #e7655d);
+    margin: 0;
+    padding: 0;
+}
+ header{
+    background-color: rgb(38, 38, 38);
+    padding: 12px;
+ }
+
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    display: inline;
+    padding-left: 2.8rem;
+    text-align: right;
+}
+nav ul li a{
+    text-decoration: none;
+        color: white;
+}
+h1{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+footer{
+    color: white;
+    background-color: rgb(38, 38, 38);
+    height: 5rem;
+    line-height: 1.8rem
+}
+.centrado{
+    width: 60%;
+    margin: 0 auto;
+}
+.principal{
+    background-color: white;
+    border-radius: 8px;
+    padding: 1rem;
+}
+.principal p{
+    line-height: 1.8rem;
+}
+h2{
+    font-weight: 800;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BentoGatos</title>
+    <style>
+
+        /* todo esto es para copiar bento-box de gente que ya ha hecho sus cositas !! buscar en BentoGrids: Bento grid by @bymyno_ */
+        div{
+            border: 1px solid blue;
+            border-radius: 8px;
+        }
+        .contenedor {
+            display: grid;
+            background-color: rgb(58, 58, 58);
+            grid-template-columns: 2fr 1fr 2fr 4fr;
+            grid-template-rows: repeat(3, 1fr);
+            gap: 10px;
+            padding: 10px;
+            height: 600px;
+        
+       }
+       .dos{
+        grid-column: 2 / span 2;
+        background-image: url(dinosaurio.png);
+        background-size: cover;
+
+       }
+       .tres{
+        grid-row: 1 / span 3;
+        grid-column: 4;
+        background-image: url(doraemon_01.jpg);
+        background-size: contain;
+       }
+       .cuatro{
+        grid-column: 1 / span 2;
+        background-image: url(cheetah-6883984_1280.jpg);
+        background-size: cover;
+       }
+       .seis{
+        grid-column: 1 / span 3;
+       }
+
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+
+    <div class="uno">1</div>
+    <div class="dos">2</div>
+    <div class="tres">3</div>
+    <div class="cuatro">4</div>
+    <div class="cinco">5</div>
+    <div class="seis">6</div>  
+
+    </div>
+</body>
+</html>
