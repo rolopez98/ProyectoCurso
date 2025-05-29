@@ -23,6 +23,10 @@
             font-weight: 700;
             margin-top:0;
         }
+        h2{
+            font-size: 7.5rem;
+            font-weight: 700;
+        }
 
         h3 {
             font-size: 4rem;
@@ -34,7 +38,7 @@
             font-weight: 700;
             line-height: 3.5rem;
         }
-        header{
+        header, footer{
             background-color: rgb(39, 38, 38);
             color:white;
             
@@ -43,7 +47,7 @@
             font-weight: 500;
             
         }
-        nav{
+        nav, footer div{
             
             display:flex;
             flex-direction: row;
@@ -52,17 +56,22 @@
             width: 90%;
             min-height: 5rem;
             margin: 0 auto;
+            
 
             
         }
+        
 
 
         .azul {
             color: #41d1eb;
         }
+        .blanco{
+            color: white;
+        }
 
         .section1 {
-            background-image: url("img/abanicos.webp");
+            background-image: url("ejercicios/fondo1.webp");
             background-repeat: repeat;
             height:100vh;
         }
@@ -70,7 +79,7 @@
         .subr-morado {
             text-decoration: underline;
             text-decoration-color: rgb(147, 8, 160);
-            text-decoration-thickness: .8vw;
+            text-decoration-thickness: .6vw;
             text-decoration-style: solid;
         }
 
@@ -87,15 +96,67 @@
             text-decoration-thickness: .6vw;
             text-decoration-style: solid;
         }
+        .mini{
+            text-decoration-thickness: .3vw;
+        }
         .contenido{
             width: 90%;
             margin:0 auto;
-            padding-top:13rem;
+            padding-top: 10rem;
+
         }
+        .section2{
+            background-color: #41d1eb;
+            height: 100vh;
+
+
+        }
+        .section2 p{
+            font-size: 1.5rem;
+            line-height: 2lh;
+            
+        }
+        .section3{
+            background-image: url("ejercicios/fondo.webp");
+            height: 100vh;
+            
+
+        }
+        .section3 p{
+            font-size: 1.5rem;
+            line-height: 2lh;
+            
+        }
+        .section4{
+            color: white;
+            background-image: url("ejercicios/fondo2.webp");
+            height: 100vh;
+        }
+        .section4 p{
+            font-size: 1.5rem;
+            line-height: 2lh;
+            padding: 1rem;
+            
+        }
+        .section5 h2{
+            margin-bottom: 1rem;
+        }
+        .section5{
+            color: white;
+            background-color: rgb(44, 43, 48);
+            height: 100vh;
+        }
+        .videos{
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        
     </style>
 </head>
 
 <body>
+    
     <header>
         <nav>
             <div>frozen solid designs</div>
@@ -119,7 +180,55 @@
             </h5>
         </div>
     </section>
+    
+    <section class="section2">
+        <div class="contenido">
+            <h2><i class="fas fa-wifi blanco" aria-hidden="true"></i> &nbsp; Websites</h2>
+            <h5>Get up and running quickly without <span class="subr-morado">breaking the bank</span></h5>
+            <p>Pick from your choice of layouts and features to launch your site in no time!</p>
+        </div>
+    </section>
 
+    <section class="section3">
+        <div class="contenido">
+            <h2><i class="fas fa-laptop-code heading spin" aria-hidden="true"></i> &nbsp; Custom Software</h2>
+            <h5>Have a project that's a bit more <span class="subr-verde">complex?</span> We do that too</h5>
+            <p>We will work with you to build your project from the ground up, <span class="subr-morado mini">tailored specifically</span> to your needs.</p>
+        </div>
+    </section>
+
+    <section class="section4">
+        <div class="contenido">
+            <h2><i class="fas fa-mobile-alt heading spin" aria-hidden="true"></i>&nbsp; App Development</h2>
+            <h5>Do you have the <span class="subr-morado">perfect idea</span> for an app, but don't know where to start? Let us help</h5>
+            <p>We use the <span class="subr-azul mini">Dart</span> language and Flutter development kit - both developed and maintained by <span class="subr-verde mini">Google</span> - to build state of the art applications that run on both Android and iOS without the need for creating two code bases.
+            <br>
+            Less development time, still compiles and performs as native code.</p>
+        </div>
+    </section>
+
+    <section class="section5">
+        <div class="contenido">
+            <h2 class="youtube"><i class="fa-brands fa-youtube heading " aria-hidden="true"></i>Youtube</h2>
+
+            <div class="videos">
+            <iframe width="768" height="432" src="https://www.youtube.com/embed/WqXIu-8GgYE?si=tD3oaVe6W3FFUO5U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <iframe width="768" height="432" src="https://www.youtube.com/embed/WqXIu-8GgYE?si=tD3oaVe6W3FFUO5U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        </div>
+        
+
+    </section>
+
+    <footer>
+        <div>
+        <div>Private Policy</div>
+            <div><i class="fa-brands fa-youtube"></i>
+            <i class="fa-solid fa-envelope"></i> &nbsp;jason@frozensoliddesigns.com </div>
+        </div>
+    </footer>
 </body>
 
 </html>
