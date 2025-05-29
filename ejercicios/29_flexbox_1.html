@@ -5,13 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FlexBox 1</title>
     <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(2, 91, 255);
+            text-align: center;
+
+        }
+        .fondo{
+            color: white;
+           
+        }
+        .contenedor{
+            display: flex;
+            gap: 30px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            font-family: Arial, Helvetica, sans-serif;
+            justify-content: center;
+            
+            
+
+        }
+        .uno, .dos, .tres{
+            border: 2px solid red;
+            width: 100px;
+            background-color: white;
+            
+            
+        }
+        .uno{
+            /* flex-flow: 1 1 auto;
+            flex-grow: 1; */
+             align-items: center;
+             display: flex;
+             justify-content: center;
+             width: 200px;
+             height: 300px;
+             text-align: center;
+
+        
+             /* PAGINA CSS FLEXBOX https://yoavsbg.github.io/css-flexbox-playground/ */
+            
+            
+
+            
+        
+        
+        }
+        .dos{
+            /* flex-grow: 2; */
+            align-items: center;
+             display: flex;
+             justify-content: center;
+             width: 300px;
+             height: 400px;
+             text-align: center;
+        }
+        .tres{
+            /* flex-grow: 3; */
+            align-items: center;
+             display: flex;
+             justify-content: center;
+             width: 200px;
+             height: 300px;
+             text-align: center;
+        }
+        
 
     </style>
 </head>
 <body>
+
+    <main class="fondo">
+    <header>
+    <h3>start now</h3>
+    <h1>Your plan, your choice.</h1>
+
+</header>
+</main>
+     
     <div class="contenedor">
-        <div class="uno">u</div>
-        <div class="dos"></div>
+        <div class="uno">
+            <img style="width: 100px;"
+            src="dinosaurio.png" alt="dinosaurio"> 
+            <p>Starter</p> 
+            <p>Precio</p> 
+        </div>
+
+        <div class="dos">99$</div>
+
         <div class="tres"></div>
     </div>
     
