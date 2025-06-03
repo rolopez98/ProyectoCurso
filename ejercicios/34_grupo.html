@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo IC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Roboto", sans-serif;
+            font-size: 14px;
+
+        }
+        header{
+            width: 100%;
+            /* border:1px solid blue; */
+        }
+        nav{
+            width:80%;
+            margin:0 auto;
+            /* border:1px solid red; */
+        }
+        h1{
+            font-size: 4rem;
+            color:white;
+            font-weight: 700;
+        }
+        h2{
+            font-size: 3rem;
+            color: black;
+            font-weight: 600;
+            margin: 0;
+
+        }
+        h3{
+            font-size: 2rem;
+            color: black;
+            font-weight: 700;
+            margin: 0;
+        }
+        hr{
+            background-color: black;
+            height: 1px;
+        }
+
+        .contenedor {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top:1.4rem;
+            padding-bottom:1.4rem;
+        }
+
+        .logo img {
+            width: 50px;
+        }
+
+        .menu ul {
+            list-style: none;
+        }
+
+        .menu ul li {
+            display: inline;
+            padding-right: 1.5rem;
+            font-weight: 600;
+        }
+
+        .primera{
+            background: linear-gradient(rgba(0,0,0,0.409)), url(ic_primera.webp);
+
+            /* background-size: contain; */
+
+            background-position: left;
+            height: 75vh;
+            
+            display:flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        .titulo{
+            width: 80%;
+            margin: 5rem auto;
+            
+        }
+        .titulo p, .dibujos p{
+            font-size: 1.4rem;
+            color:white;
+            font-weight: 400;
+        }
+        .dibujos{
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            align-items: end;
+            justify-content: space-evenly;
+            
+        }
+        .dibujos img{
+            width: 5rem;
+        }
+        .dibujos div{
+           border-bottom: 3px solid white;
+           width: 20%;
+        }
+
+        .segunda{
+            background-color: aliceblue;
+            min-height: 75vh;
+            display: flex;
+           
+
+        }
+        .contenedor_seg{
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 6rem;
+            
+           
+
+        }
+        .segunda p{
+            font-size: 1.4rem;
+            font-weight: 400;
+
+        }
+        
+        .derecha{
+            display: flex;
+            flex-wrap: wrap;
+            width: 40%;
+            gap: 1rem;
+            
+        }
+        .izquierda{
+            width: 40%;
+        }
+
+        .sectores{
+            width: 17rem;
+            height: 17rem;
+            box-sizing: border-box;
+            background-image: url(Sector-Retail.jpg);
+            background-size: cover;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-content: start;
+            padding-left: 2rem;
+        }
+    
+        .naranja{
+            color: rgb(241, 121, 8);
+        }
+        .sectores a{
+            text-decoration: none;
+            font-weight: 600;
+            color: #cf471e;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="contenedor">
+            <div class="logo">
+                <a href="">
+                    <img src="Logo-IC.png" alt="Logo IC">
+                </a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>SECTORES</li>
+                    <li>SERVICIOS</li>
+                    <li>PAÍSES</li>
+                    <li>HISTORIA</li>
+                    <li>POLÍTICAS Y VALORES</li>
+                    <li>PROVEEDORES</li>
+                    <li>EMPLEO</li>
+                    <li>CONTACTO</li>
+                    <li> <span class="naranja">ESP</span> <span class="naranja">|</span> ENG <span class="naranja">|</span> FR</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="primera">
+        <div class="titulo">
+            <h1>FIT OUT & VALUE ENGINEERING</h1>
+            <p>Proyectos únicos para empresas internacionales.</p>
+        </div>
+        <div class="dibujos">
+            <div>
+                <img src="retail_grupo.png" alt="">
+                <p>RETAIL</p>
+            </div>
+            <div>
+                <img src="maniqui_grupo.png" alt="">
+                <p>LUJO</p>
+            </div>
+            <div>
+                <img src="hospital_grupo.png" alt="">
+                <p>SANITARIO</p>
+            </div>
+            <div>
+                <img src="torre_grupo.png" alt="">
+                <p>OFICINAS</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="segunda">
+        <div class="contenedor_seg">
+           <div class="izquierda">
+            <h2>Sectores</h2>
+            <hr>
+            <p>Empresa lider en la ejecución de proyectos complejos para grandes clientes internacionales de los sectores retail, lujo, sanitario y oficinas.</p>
+           </div>
+        
+       
+          <div class="derecha">
+            <div class="sectores">
+                <h3>Retail</h3>
+                <p><a href="">Ver más</a></p>
+            </div>
+            <div class="sectores">
+                <h3>Lujo</h3>
+                <p><a href="">Ver más</a></p>
+            </div>
+            <div class="sectores">
+                <h3>Sanitario</h3>
+                <p><a href="">Ver más</a></p>
+            </div>
+            <div class="sectores">
+                <h3>Oficinas</h3>
+                <p><a href="">Ver más</a></p>
+            </div>
+          </div>
+    </div>
+
+    </section>
+</body>
+
+</html>
