@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadenas de texto</title>
+    <script>
+        var cadena = "En un lugar de la 'Mancha'... bla bla bla";
+        console.log(cadena);
+        console.log(cadena.toUpperCase());
+        console.log(cadena.toLowerCase());
+        var tmp = cadena.toLowerCase();
+        console.log(cadena.indexOf("cha"));
+        console.log(cadena.at(22));
+
+    
+        console.log(cadena.slice(21, 27));
+
+        console.log("Longitud: " + cadena.length);
+        // --------------------------------------
+
+        var objetivo = "bla";
+        var minuscula = cadena.toLowerCase();
+        var largo = objetivo.length;
+
+        var indice = minuscula.indexOf(objetivo);
+        console.log("indice: " + indice);
+        console.log(cadena.slice(indice, indice + 10));
+
+        //---------------------------------------------
+
+        console.log(cadena);
+        var modif = cadena.replace("lugar", "sitio");
+        console.log(modif);
+
+
+
+        var numero = 124;
+    
+        var texto = `
+        este es un texto
+            en 
+        varias 
+            lineas, donde se imprimen incluso
+            las tabulaciones, saltos
+            de línea   ${numero}     etc`
+
+        console.log(texto);
+
+        var nombre = 'Paco';
+        var email = "paconi@gmail.com";
+        var edad = 112;
+
+        var mensaje = `Hola soy ${nombre}, tengo ${edad} años y mi correo es ${email}`
+        console.log(mensaje);
+        
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
