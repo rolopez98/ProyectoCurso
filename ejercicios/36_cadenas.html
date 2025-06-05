@@ -53,8 +53,91 @@
 
         var mensaje = `Hola soy ${nombre}, tengo ${edad} años y mi correo es ${email}`
         console.log(mensaje);
-        
 
+        //----------------------------------------------------------------
+
+        // 1. Concatena dos cadenas de texto
+
+        var saludo = "Hola";
+        var nombre = "Rocío";
+        var mensaje = saludo + ", soy " + nombre + "!";
+
+        console.log(mensaje);
+
+        // 2. Muestra la longitud de una cadena de texto
+        
+        var texto = "Hola! Soy Rocío.";
+        var longitud = texto.length;
+
+        console.log(longitud);
+
+        // 3. Muestra el primer y último carácter de una cadena
+
+        var texto = "Mi nombre es Rocío";
+        console.log(texto.charAt(0));
+        console.log(texto.at(-1));
+        
+        console.log(texto.at(texto.length - 1));
+
+        // 4. Convierte a minúsculas y a mayúsculas una cadena
+
+        var texto = "Hola! ¿Qué tal?";
+
+        console.log(texto);
+        console.log(texto.toUpperCase());
+        console.log(texto.toLowerCase());
+
+       
+        // 5. Crea una cadena de texto de varias lineas
+
+        var mensaje = `              
+                      Hola,
+                        mi nombre es Rocío.
+                Me gustan las hamburguesas`;
+
+        console.log(mensaje);
+
+        // 6. Interpola el valor de una variable en una cadena
+
+        var nombre = "Rocío";
+        var mensaje = `Hola, mi nombre es ${nombre}.`;
+
+        console.log(mensaje);
+
+        // 7. Reemplazar todas las ocurrencias de una cadena por otra
+
+        var cadena = "Soy X y tengo 26 años."
+        var modif = cadena.replace("X", "Rocío");
+        console.log(modif);
+
+        var modif = cadena.replaceAll('a', '_A');
+        
+        // 8. Comprueba si una cadena contiene una palabra concreta
+
+        var primera = "Rocíoooooooo jejeje que pasa chaval";
+        console.log(primera.indexOf("cha"));
+        // 9. Comprueba si dos cadenas son iguales
+         var a = "Rocío";
+         var b = "Rocío";
+
+        console.log(a == b);
+
+        // 10. Comprueba si dos cadenas tienen la misma longitud
+
+        var a = "Rocíoooo";
+        var b = "Rocío";
+
+        console.log(a.length == b.length);
+        
+//*  //-------------------------------------
+/* Programación Estrucurada
+        
+1. Secuencia
+
+2. Alternativa o bifurcación
+
+3. Ciclos o bucles     
+*/  
 
     </script>
 </head>

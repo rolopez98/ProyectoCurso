@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alternativas</title>
+    
+    <!-- <script>
+        var indice = true; 
+        if(indice == true){
+            console.log("Indice es verdadero");
+        }
+        else{
+            console.log("La condición no se cumple");
+        }
+        console.log("Después del if");
+    </script> -->
+    <script>
+        // var numero = 3;
+        // if (numero % 2 == 1){
+        //     console.log(`El número ${numero} es IMPAR`);
+        // }
+        // else{
+        //     if (numero == 0){
+        //         console.log(`El número es cero`)
+        //     }
+        //     else {
+        //     console.log(`El número ${numero} es PAR`);
+        //     }
+        // }
+
+
+        //NOTA DE EXAMEN! --------------------------------------------------
+        var numero = 5;
+        if (numero < 5){
+            console.log(`SUSPENSO`);
+        }
+            else{
+                if (numero < 7){
+                    console.log(`SUFICIENTE`);
+                }
+                else{
+                    if (numero < 9){
+                    console.log(`NOTABLE`);
+                }
+                else{
+                    console.log(`SOBRESALIENTE`);
+                }
+            }
+             
+        }
+
+        //--------------DIAS DE LA SEMANA-----------------
+
+        var dia = 1;
+        if (0 < dia && dia < 8) {
+
+            if (dia == 1) {console.log(`Lunes`) }
+            if (dia == 2) {console.log(`Martes`) }
+            if (dia == 3) {console.log(`Miércoles`) }
+            if (dia == 4) {console.log(`Jueves`)}
+            if (dia == 5) {console.log(`Viernes`)}
+            if (dia == 6) {console.log(`Sábado`)}
+            if (dia == 7) {console.log(`Domingo`)}
+        }
+        else {
+            console.log("día incorrecto");
+        }
+        </script>
+</head>
+<body>
+    <button onclick="alert('Has hecho click en el botón')">Púlsame</button>
+    <img ondblclick="alert('doble click en el dinosaurio')" style="width: 50px;" src="dinosaurio.png" alt="">
+
+    <button onclick="console.log('Suspenso');alert('feifeiifej')"> Púlsame
+
+    </button>
+</body>
+</html>
