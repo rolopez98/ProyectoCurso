@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bucles</title>
 </head>
 <script>
     //Bucle for: controlado por un contador
@@ -36,6 +36,55 @@
     console.log(`Múltiplos de ${base}: ${multiplos}` );
     console.log(`NO Múltiplos de ${base}: ${no_mul}` );
 
+    //----------------------------------------------
+
+    // Bucles while 
+
+    var cuenta = 0;
+    while (cuenta < 10) {
+        console.log("Cuenta: " + cuenta);
+        cuenta++;
+        //break;
+    }
+
+
+    var x = 0;
+    while(true){
+        console.log('Hola ' + x);
+        if (x == 5){
+            break;
+        }
+        x++ ;
+    }
+    console.log('He salido');
+
+    // ---------------------------------------
+
+    var arr1 = [1,2,3,4,5,6,7,8];
+
+    for(var valor of arr1){
+        console.log("Valor: " + valor);
+    }
+
+    var cadena = 'Esto es una prueba';
+    for(var letra of cadena){
+        console.log(letra.toLocaleUpperCase());
+    }
+
+    // Invertir la cadena de arriba (habría que comentar todo lo de arriba para que funcione, porque arriba tiene que haber algún tipo de bucle infinito y por eso esto no sale en consola)
+    var largo = cadena.length;
+    var inversa = '';
+    for (var i = largo -1; i<=0; i--){
+        inversa += cadena[i];
+    }
+    console.log(inversa);
+
+    // otra forma de invertir la cadena
+
+    // for(var letra of cadena){
+    //     inversa letra + inversa;
+    // }
+    // console.log(inversa);
 </script>
 <body>
     
