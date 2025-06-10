@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios</title>
+    <script>
+        // Ejercicios
+        
+        // 1. Imprime por consola tu nombre si una variable toma su valor
+
+        var nombre = "Rocio";
+
+        if (nombre == "Rocio") {
+            console.log(nombre);
+        }
+
+        // 2. Imprime por consola un mensaje si el usuario y contraseña concide con unos establecidos
+
+        var user, password;
+
+        user = "Ro";
+        password = "fff";
+
+        if ((user == "Ro") && (password == "fff")) {
+
+            console.log("Welcome " + user);
+            } else {
+                console.log("Unknown user")
+        }
+
+        // 2.1 Imprime por consola un mensaje si el usuario y contraseña concide con unos establecidos (Alt)
+
+        var usuario, contraseña;
+
+        usuario = "Ro";
+        contraseña = "fff";
+
+        if (usuario == "Ro") {
+            if (contraseña == "fff") {
+                console.log("Usuario autorizado");
+            }   
+        } else { 
+            console.log("Usuario o contraseña incorrecto")
+    }
+
+        // 3. Verifica si un número es positivo, negativo o cero e imprime un mensaje
+
+        var numero = 1;
+
+        if(numero > 0) {
+            console.log("Tu numero es positivo");
+        } else {
+            if(numero < 0) {
+                console.log("Tu numero es negativo");
+            } else {
+                console.log("Tu numero es cero");
+            }
+        }
+
+        // 3.1. Verifica si un número es positivo, negativo o cero e imprime un mensaje (Alt)
+         var digito = -4;
+
+        if(digito > 0) {
+            console.log("Tu digito es positivo");
+        }
+
+        if(digito < 0) {
+             console.log("Tu digito es negativo");
+        }
+
+        if(digito = 0) {
+             console.log("Tu digito es negativo");
+        }
+
+        var valor = -4;
+
+        // 4. Verifica si una persona puede votar o no (mayor o igual a 18) e indica cuántos años le faltan
+
+        const MAYORIA_EDAD = 18
+
+        var edad = 18;
+
+        if (edad >= MAYORIA_EDAD) {
+            console.log("Puede votar");
+        } else {
+            console.log("No puede votar");
+        }
+
+        // 5. Usa el operador ternario para asignar el valor "adulto" o "menor" a una variable
+        //    dependiendo de la edad 
+
+        var age = 2;
+        var persona;
+
+        if (age >= MAYORIA_EDAD) {
+            persona = "adulto";
+        } else {
+            persona = "menor";
+        }
+
+        console.log("La persona es " + persona);
+
+        var anios = 2;
+        var individuo;
+
+        (anios >= MAYORIA_EDAD) ? (individuo = "adulto") : (individuo = "menor");
+        
+        console.log("El individuo es " + individuo);
+
+        // 6. Muestra en que estación del año nos encontramos dependiendo del valor de una variable "mes"
+
+        let day = prompt("Introduce el dia");
+        let month = prompt("Introduce el mes en numero");
+
+        if (month > 3 && month < 6){
+            
+        }
+
+        // 7. Muestra el número de días que tiene un mes dependiendo de la variable del ejercicio anterior
+
+        // switch
+
+        // 8. Usa un switch para imprimir un mensaje de saludo diferente dependiendo del idioma
+
+        // 9. Usa un switch para hacer de nuevo el ejercicio 6
+
+        // 10. Usa un switch para hacer de nuevo el ejercicio 7
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

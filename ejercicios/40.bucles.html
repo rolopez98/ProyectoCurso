@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    //Bucle for: controlado por un contador
+
+    var vueltas = 100;
+    // for(var i = 2; i <= vueltas; i+=2){
+    //     console.log(`La i vale ${i}`);
+    // }
+
+    // for(var i = vueltas; i>-1; i--){
+    //     console.log(`La i vale ${i}`);
+    // }
+
+    // Imprimir los múltiplos de 3 entre 0 y 100
+    var resto = 0;
+    var base = 2;
+    var multiplos = [];
+    var no_mul =[];
+
+    for(var i = 0; i < 100; i ++){
+        resto = i % base;
+        if( resto == 0){
+            // console.log(`La i vale ${i}`);
+            multiplos.push(i);
+        }
+        else{
+            no_mul.push(i);
+        }
+    }
+    console.log(`Múltiplos de ${base}: ${multiplos}` );
+    console.log(`NO Múltiplos de ${base}: ${no_mul}` );
+
+</script>
+<body>
+    
+</body>
+</html>
