@@ -110,22 +110,138 @@
 
         // 6. Muestra en que estación del año nos encontramos dependiendo del valor de una variable "mes"
 
-        let day = prompt("Introduce el dia");
-        let month = prompt("Introduce el mes en numero");
+        var mes = 2;
+        var estacion = '';
 
-        if (month > 3 && month < 6){
-            
+        if (mes < 4){
+            estacion = "Invierno";
         }
+        else{
+            if (mes < 7){
+                estacion = 'Primavera';
+            }
+            else{
+                if(mes < 10){
+                    estacion = 'Verano';
+                }
+                else{
+                    estacion = 'Otoño';
+                }
+            }
+        }
+        console.log(estacion);
 
         // 7. Muestra el número de días que tiene un mes dependiendo de la variable del ejercicio anterior
+
+        mes = 12;
+        var dias = 0;
+        if (mes == 2){
+            dias = 28;
+        }
+        else{
+            if(mes == 1 || 
+              mes == 3 || 
+              mes == 5 || 
+              mes == 7 ||
+              mes == 8 ||
+              mes == 10 ||
+              mes == 12)
+              {
+                dias = 31;
+              }
+              else
+              {
+                dias = 30;
+              }
+        }
+        console.log(`El mes ${mes} tiene ${dias} días.`);
 
         // switch
 
         // 8. Usa un switch para imprimir un mensaje de saludo diferente dependiendo del idioma
 
+         var salida = '';
+        switch (mes) {
+            case 1:
+                salida = "enero";
+                break;
+            case 2:
+                salida = "febrero";
+                break;
+            case 3:
+                salida = "marzo";
+                break;
+            default:
+                salida = 'Otro mes';
+                break;
+        }
+        console.log(salida);
+// -----------------
+
+        var idioma = 'kk';
+        switch (idioma) {
+            case 'es':
+                console.log('Hola Mundo');
+                break;
+            case 'en':
+                console.log('Hello world');
+                break;
+            case 'fr':
+                console.log('Bonjour le monde');
+                break;
+        
+            default:
+                console.log("Idioma desconocido");
+                break;
+        }
+
         // 9. Usa un switch para hacer de nuevo el ejercicio 6
 
+        mes = 6;
+       switch (mes) {
+            case 1:
+            case 2:
+            case 3:
+                console.log('Invierno');
+                break;
+            case 4:
+            case 5:
+            case 6:
+                console.log('Primavera');
+                break;
+       
+        default:
+            break;
+       }
+
         // 10. Usa un switch para hacer de nuevo el ejercicio 7
+
+        mes = 3;
+        switch (mes) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                console.log(`El mes ${mes} tiene 31 días`);
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 5:
+            case 11:
+                console.log(`El mes ${mes} tiene 30 días`);
+                break;
+            case 2:
+                console.log(`El mes ${mes} tiene 28 días`);
+                break;
+            default:
+                console.log(`El mes ${mes} no existe`);
+                break;
+        }
+        
     </script>
 </head>
 <body>
