@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+    <script>
+        // var nombre = 'Ro';
+        function hola(nombre, edad, horoscopo) {
+           // console.log(`Hola ${nombre}, tienes ${edad} años y eres ${horoscopo}`);
+            // alert('Hola');
+            return `Hola ${nombre}, tienes ${edad} años y eres ${horoscopo}`;
+        }
+        var saludo = hola('Rocio', 26, 'Cáncer');
+        document.write(saludo);
+        console.log(saludo);
+
+        // Función que sume dos números
+        function suma(a, b){
+            return a + b;
+        }
+        var x = suma(19,18);
+        console.log(x);
+        document.write(`<br>La suma es ${x}`);
+
+        //--------------------SUMA DE ARRAY-------------
+
+        var numeros = [1,2,3,4,5,6,7,8,9];
+        function suma_array(sumandos){
+            //comprobar entradas
+            //hacer el trabajo
+            //comprobar salida
+
+            var tmp = 0;
+            for(var valor of sumandos){
+                tmp = suma(tmp, valor);
+            }
+            return tmp;
+        }
+        var x = suma_array(numeros);
+        console.log(x)
+        document.write(`<br>La suma es ${x}`);
+
+        //-----------------------------
+
+        function capitalize(texto){
+            var convertido = texto[0].toUpperCase() + texto.slice(1).toLocaleLowerCase();
+            return convertido;
+        }
+        console.log(capitalize('barBerO'));
+
+        //------------------PASCAL CASE (CONVERTIR)----------------
+
+        function superCapitalize(texto){
+            //erase una vez en sevilla -> Erase Una Vez En Sevilla
+            var resultado = '';
+            var trozos = texto.split(' ');
+            
+            for(var palabra of trozos){
+                resultado += capitalize(palabra) + ' ';
+            }
+            return resultado; 
+
+        }
+        
+        var txt = superCapitalize('erase una vez en sevilla');
+        console.log(txt);
+        document.write('<br>' + txt);
+            
+
+       </script>
+</head>
+<body>
+    
+    
+</body>
+</html>
