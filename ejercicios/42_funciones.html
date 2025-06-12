@@ -62,12 +62,92 @@
             return resultado; 
 
         }
-        
+    
         var txt = superCapitalize('erase una vez en sevilla');
         console.log(txt);
         document.write('<br>' + txt);
-            
 
+        // Hacer una función que nos indique si un texto tiene vocales
+
+            // var vocales = ['a', 'e', 'i', 'o', 'u'];
+            // var v = 'aeiouAEIOU'
+
+        function tieneVocales(texto){
+            
+            for(var letra of texto) {
+                switch(letra){
+                    case 'a':
+                    case 'e':
+                    case 'i':
+                    case 'o':
+                    case 'u':
+                    case 'A':
+                    case 'E':
+                    case 'I':
+                    case 'O':
+                    case 'U':
+                    return true;
+                }
+            }
+            return false;
+        }
+        console.log(tieneVocales("crwtgrgh"));
+        console.log(tieneVocales("holaaa"));
+
+        //Otra forma de hacerlo:
+
+        function tieneVocales(texto){
+            var vocales = 'aeiouAEIOU';
+            var salida = false;
+
+            for(var letra of vocales){
+                if (texto.indexOf(letra) >= 0){
+                    salida = true;
+                }
+            }
+            return salida;
+
+        }
+        console.log(tieneVocales('rfwfwfewufaa'));
+        console.log(tieneVocales('rffwbbrrr'));
+
+        // if(tieneVocales('ssssuud')){
+        //     console.log('La cadena tiene vocales');
+        // }
+        // else{
+        //     console.log('La cadena NO tiene vocales');
+        // }
+
+        // ----------------------------------------------
+
+        //Cuenta vocales
+        function cuentaVocales(texto){
+            var vocales = 'aeiouAEIOU';
+            var contador = 0;
+            for(var letra of texto){
+                if(vocales.indexOf(letra) >=0){ 
+                    contador++
+                }
+            }
+            return contador;
+        }
+        console.log(cuentaVocales('PIO'));
+
+        //-------------CUENTA VOCALES 2------------------
+        function cuentaVocales2(texto){
+            var vocales = 'aeiouAEIOU';
+            var contador = 0;
+            var largo = texto.length;
+
+            for(var i = 0; i < largo; i++){
+                if(vocales.indexOf(texto[i]) >=0){ 
+                    contador++;
+                }
+            }
+            return contador;
+        }
+        console.log(cuentaVocales2('PIOOOO')); 
+        
        </script>
 </head>
 <body>
