@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.cdnfonts.com/css/seven-segment" rel="stylesheet" />
+  <script src="js/47_ejemplos_varios.js"></script>
+  <style>
+    body {
+        background-color: rgb(133, 129, 106);
+      margin: 0;
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .contenedor {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .esfera {
+      width: 500px;
+      padding: 30px;
+      background-color: rgb(9, 110, 102);
+      border: 10px ridge rgb(21, 155, 17);
+      border-radius: 50px;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: auto auto;
+      gap: 10px;
+      align-items: center;
+    }
+
+    #reloj {
+      grid-row: 1 / span 2;
+      font-family: 'Seven Segment', sans-serif;
+      font-size: 130px;
+      color: rgb(255, 231, 95);
+      margin: 0;
+    }
+
+    #fecha, #temphum {
+      font-family: 'Seven Segment', sans-serif;
+      color: rgb(255, 231, 95);
+      margin: 0;
+      text-align: right;
+      font-size: 24px;
+    }
+
+    .botones {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      width: 500px;
+    }
+
+    button {
+      background-color: rgb(39, 75, 63);
+      color: rgb(255, 231, 95);
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 50px;
+      border-style: groove;
+    }
+  </style>
+  <title>Reloj Digital</title>
+</head>
+<body>
+  <div class="contenedor">
+    <div class="esfera">
+      <p id="reloj">00:00</p>
+      <p id="fecha"></p>
+      <p id="temphum">45°C | 60%</p>
+    </div>
+    <div class="botones">
+      <button onclick="Iniciar()">Iniciar</button>
+      <button onclick="parar()">Parar</button>
+    </div>
+  </div>
+
+</body>
+</html>
+

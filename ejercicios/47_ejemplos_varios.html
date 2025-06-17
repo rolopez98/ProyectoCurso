@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/seven-segment" rel="stylesheet">
+    <script src="js/47_ejemplos_varios.js"></script>
+    <style>
+        .contenedor{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding-top: 50px;
+        }
+        p{
+            font-family: 'Seven Segment', sans-serif;
+            font-size: 130px;
+            font-weight: 500;
+            margin: 0;
+            color: rgb(255, 231, 95);
+        }
+        .esfera{
+            width: 345px;
+            /* height: 100px; */
+            border: 10px solid rgb(21, 155, 17);
+            overflow: auto;
+            padding: 30px;
+            background-color: rgb(9, 110, 102);
+            border-radius: 50px;
+            border-style: ridge;
+
+        }
+        .botones {
+             display: flex;
+             gap: 15px;
+        }
+        button {
+            background-color: rgb(39, 75, 63);
+            color: rgb(255, 231, 95);
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 50px;
+            border-style: groove;
+        }
+
+        
+    </style>
+    <title>Ejemplos Varios (Reloj) </title>
+    
+</head>
+<body>
+<div class="contenedor">
+    <div class="esfera">
+        <p id="reloj">00:00</p>
+    </div>
+    <div class="botones">
+    <button onclick="Iniciar()">Iniciar</button>
+    <button onclick="parar()">Parar</button>
+    </div>
+</div>
+</body>
+</html>

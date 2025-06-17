@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Var Let y Const</title>
+    <script>
+
+        function ejemploVar(){
+            var x = 10;
+            if (true){
+                var x = 20;
+                console.log(x);
+            }
+            console.log(x)
+        }
+        // var: define variables que se pueden redefinir, pero tiene muchos menos alcance que el let 
+
+        function ejemploLet(){
+            let x = 10;
+            x++;
+            if (true){
+                let x = 20;
+                console.log(x);
+            }
+            console.log(x);
+        }
+
+        // VARIABLES CONSTANTES, NO SE PUEDE CAMBIAR SU VALOR NI SE PUEDE REDEFINIR
+        function ejemploConst(){
+            const x = 10;
+            console.log(x);
+        //     (NO SE PODRÍA USAR 
+        //         // x++;
+        //     )
+        } 
+
+    </script>
+</head>
+<body>
+    <button onclick="ejemploVar()">
+        Ejemplo Var
+    </button>
+    <button onclick="ejemploLet()">
+        Ejemplo Let
+    </button>
+      <button onclick="ejemploConst()">
+        Ejemplo Const
+    </button>
+</body>
+</html>

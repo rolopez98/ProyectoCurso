@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/45_dom_1.js"></script>
+    <style>
+        .rojo{
+            color:red;
+        }
+        .titulo{
+            color: azure;
+            background-color: blue;
+        }
+        .contenedor{
+            display: flex;
+            gap: 10px;
+            background-color: #d7d6e3;
+            height: 100vh;
+        }
+
+        .contenedor div{
+            height:100px;
+            width: 100px;
+            border: 2px solid black;
+            
+        }
+        .uno{
+            background-color: #4f32dd;
+        }
+        .dos{
+            background-color: #55efc4 ;
+        }
+        .tres{
+            background-color: #74b9ff;
+        }
+        .cuatro{
+            background-color: #fd79a8;
+        }
+        .cinco{
+            background-color: #a29bfe;
+        }
+
+    </style>
+    <title>Introducción al DOM </title>
+</head>
+<body>
+    <h1>DOM: Document Object Model</h1>
+    <button onclick="muestraH1()">Haz click aquí</button>
+
+    <h1 class="titulo" id="primero">Primer título</h1>
+    <h1 class="titulo" id="segundo">Segundo título</h1>
+    <h1 class="titulo" id="tercero">Tercer título</h1>
+
+    <button onclick="tagName_()">Tag Name</button>
+    <button onclick="verPorID()">Ver por id</button>
+    <button onclick="verPorClase()">Ver por clase</button>
+    <button onclick="verConQuery()">Ver con Query</button>
+    <button onclick="cambiaClase()">Cambia clase</button>
+    <br>
+    <hr>
+    <p>Seleccione una opción</p>
+
+    <label for="">
+        <input type="radio" name="opciones" id="" value="1">Uno
+    </label><br>
+    <label for="">
+        <input type="radio" name="opciones" id="" value="2">Dos
+    </label><br>
+    <label for="">
+        <input type="radio" name="opciones" id="" value="3">Tres
+    </label><br>
+    <label for="">
+        <input type="radio" name="opciones" id="" value="4">Cuatro
+    </label><br>
+    <label for="">
+        <input type="radio" name="opciones" id="" value="5">Cinco
+    </label> <br> <br>   
+    
+    <button onclick="verSeleccion()">Enviar</button>
+    <p id="seleccion">XXXXXXXXXX</p>
+    <br><br>
+
+    <hr>
+<br><br>
+<p>Seleccione color de fondo</p>
+
+<div class="contenedor" id="grupo">
+    <div class="uno" onclick="cambiaColor(1)">1</div>
+    <div class="dos" onclick="cambiaColor(2)">2</div>
+    <div class="tres" onclick="cambiaColor(3)">3</div>
+    <div class="cuatro" onclick="cambiaColor(4)">4</div>
+    <div class="cinco" onclick="cambiaColor(5)">5</div>
+</div>
+            
+</body>
+</html>
