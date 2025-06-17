@@ -21,13 +21,11 @@ function muestraHora(){
 
     //FECHA -----------------------------
     let dia = fecha.getDate().toString().padStart(2, '0');
-    let mes = (fecha.getMonth() + 1).toString().padStart(2, '0');
+    let mes = (fecha.getMonth() + 1 ).toString().padStart(2, '0');
     let año = fecha.getFullYear();
 
     reloj.textContent = `${hora}:${minutos}:${segundos}`;
     fechaElemento.textContent = `${dia}/${mes}/${año}`;
-
-
 }
 
 function parar(){
