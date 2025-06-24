@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Adivina el número</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+  <script src="js/51_adivina.js" defer></script>
+  <script src="js/tema.js" defer></script>
+</head>
+<body class="light">
+  <button id="toggle-theme">🌙 Modo oscuro</button>
+
+  <h1>Adivina el número entre 1 y 100</h1>
+  <h2>Te quedan <span id="quedan">10</span> intentos</h2>
+  <h2 id="resultado"></h2>
+
+  <form action="" onsubmit="event.preventDefault()">
+    <label for="numero">Número</label>
+    <input type="number" id="numero" min="1" max="100" />
+    <button id="enviar" onclick="adivinar()">Adivinar</button>
+
+    <ul id="historial"></ul>
+  </form>
+
+  <button onclick="reiniciar()">Otra partida</button>
+</body>
+</html>
